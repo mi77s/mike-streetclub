@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+	<link rel="icon" href="imagens/contato.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+		
+		 <script src="script.js"></script>
+		
+    </header>
+    
+	<div class="bg">
+	
+				<nav class="menu">
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="camisetas.html">Coleções</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="contato-ing.html"><img src="imagens/bandeira_usa.png" width="25px"></a></li>
+				</ul>
+			</nav>
+	
+<main>
+        <form class="contato-form" onsubmit="return enviarFormulario();">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="aviso">Dados enviados com sucesso!</div>
+    </main>
+    
+    <footer>
+        <p>Mike StreetClub 2023 - &copyTodos os direitos Reservados</p>
+		<a href="#"><img src="imagens/subir.png"></a>
+    </footer>
+	</div>
+</body>
+</html>

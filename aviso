@@ -1,0 +1,28 @@
+// Função para manipular o envio do formulário
+function enviarFormulario() {
+    // Recupera os valores dos campos do formulário
+    var nome = document.getElementById('nome').value;
+    var telefone = document.getElementById('telefone').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+
+    // Aqui, você pode adicionar lógica para processar os dados do formulário
+    // Por exemplo, enviar os dados para um servidor ou realizar alguma ação específica
+
+    // Exemplo: exibir os dados no console
+    console.log('Nome: ' + nome);
+    console.log('Telefone: ' + telefone);
+    console.log('Email: ' + email);
+    console.log('Mensagem: ' + mensagem);
+
+    // Exibir o aviso
+    document.getElementById('aviso').style.display = 'block';
+
+    // Defina um temporizador para ocultar o aviso após 3 segundos (3000 milissegundos)
+    setTimeout(function () {
+        document.getElementById('aviso').style.display = 'none';
+    }, 3000);
+
+    // Evita o envio tradicional do formulário
+    return false;
+}
